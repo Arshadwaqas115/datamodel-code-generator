@@ -28,7 +28,8 @@ class ConfigDict(_BaseModel):
     protected_namespaces: Optional[tuple[str, ...]] = None  # noqa: UP045
     regex_engine: Optional[str] = None  # noqa: UP045
     use_enum_values: Optional[bool] = None  # noqa: UP045
-    coerce_numbers_to_str: Optional[bool] = None  # noqa: UP045
+    coerce_numbers_to_str: Optional[bool] = None  # noqa: UP045,
+    json_schema_extra: Optional[dict] = None  # noqa: UP045
 
 
 __all__ = [
